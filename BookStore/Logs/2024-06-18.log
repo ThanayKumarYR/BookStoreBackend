@@ -1,0 +1,170 @@
+2024-06-18 15:38:37.3117|WARN|Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer|The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert.
+2024-06-18 15:38:37.4186|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7234
+2024-06-18 15:38:37.4186|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5098
+2024-06-18 15:38:37.4186|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-06-18 15:38:37.4186|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-06-18 15:38:37.4186|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Thanay\source\repos\BookStore\BookStore
+2024-06-18 15:38:40.4431|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7234/swagger - - -
+2024-06-18 15:38:40.6478|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7234/swagger - 301 0 - 202.3358ms
+2024-06-18 15:38:40.6553|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7234/swagger/index.html - - -
+2024-06-18 15:38:40.7679|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7234/swagger/index.html - 200 - text/html;charset=utf-8 112.5035ms
+2024-06-18 15:38:40.7877|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7234/swagger/swagger-ui.css - - -
+2024-06-18 15:38:40.7877|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7234/swagger/swagger-ui-bundle.js - - -
+2024-06-18 15:38:40.7877|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7234/swagger/swagger-ui-standalone-preset.js - - -
+2024-06-18 15:38:40.8267|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2024-06-18 15:38:40.8267|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2024-06-18 15:38:40.8267|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7234/swagger/swagger-ui.css - 200 143943 text/css 43.6255ms
+2024-06-18 15:38:40.8267|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7234/swagger/swagger-ui-standalone-preset.js - 200 339486 text/javascript 42.4405ms
+2024-06-18 15:38:40.8393|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7234/_framework/aspnetcore-browser-refresh.js - - -
+2024-06-18 15:38:40.8393|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7234/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript;+charset=utf-8 7.3600ms
+2024-06-18 15:38:40.8393|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2024-06-18 15:38:40.8393|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7234/swagger/swagger-ui-bundle.js - 200 1096145 text/javascript 62.1295ms
+2024-06-18 15:38:40.8572|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7234/_vs/browserLink - - -
+2024-06-18 15:38:40.9179|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7234/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 60.7432ms
+2024-06-18 15:38:41.4045|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7234/swagger/v1/swagger.json - - -
+2024-06-18 15:38:41.6281|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7234/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 223.4628ms
+2024-06-18 15:39:00.8595|WARN|Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer|The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert.
+2024-06-18 15:39:00.9202|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7234
+2024-06-18 15:39:00.9202|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5098
+2024-06-18 15:39:00.9202|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-06-18 15:39:00.9202|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-06-18 15:39:00.9202|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Thanay\source\repos\BookStore\BookStore
+2024-06-18 15:39:01.5123|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7234/swagger/index.html - - -
+2024-06-18 15:39:01.8252|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7234/swagger/index.html - 200 - text/html;charset=utf-8 312.2394ms
+2024-06-18 15:39:01.8391|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7234/_framework/aspnetcore-browser-refresh.js - - -
+2024-06-18 15:39:01.8391|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7234/_vs/browserLink - - -
+2024-06-18 15:39:01.8456|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7234/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript;+charset=utf-8 6.3443ms
+2024-06-18 15:39:01.8820|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7234/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 42.8861ms
+2024-06-18 15:39:02.0120|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7234/swagger/v1/swagger.json - - -
+2024-06-18 15:39:02.0292|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7234/swagger/favicon-32x32.png - - -
+2024-06-18 15:39:02.0495|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2024-06-18 15:39:02.0495|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7234/swagger/favicon-32x32.png - 200 628 image/png 26.4835ms
+2024-06-18 15:39:02.2050|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7234/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 192.9173ms
+2024-06-18 15:39:57.2353|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7234/api/User/create - application/json 108
+2024-06-18 15:39:57.2353|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'BookStore.Controllers.UserController.CreateUser (BookStore)'
+2024-06-18 15:39:57.3043|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "CreateUser", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[ModelLayer.ResponseModel.ResponseModel`1[System.Int32]]] CreateUser(RepositoryLayer.Entity.User) on controller BookStore.Controllers.UserController (BookStore).
+2024-06-18 15:39:59.2475|ERROR|BookStore.Controllers.UserController|Error creating user|Microsoft.Data.SqlClient.SqlException (0x80131904): Could not find stored procedure 'User_Insert'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader(Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at Microsoft.Data.SqlClient.SqlCommand.InternalEndExecuteReader(IAsyncResult asyncResult, Boolean isInternal, String endMethod)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteReaderInternal(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteReaderAsync(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<InternalExecuteReaderAsync>b__201_1(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.ExecuteScalarImplAsync[T](IDbConnection cnn, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 1241
+   at RepositoryLayer.Service.UserServiceRepositoryLayer.InsertUserAsync(String fullName, String emailId, String password, String mobileNumber) in C:\Users\Thanay\source\repos\BookStore\RepositoryLayer\Service\UserServiceRepositoryLayer.cs:line 32
+   at BusinessLayer.Service.UserServiceBusinessLayer.CreateUserAsync(String fullName, String emailId, String password, String mobileNumber) in C:\Users\Thanay\source\repos\BookStore\BusinessLayer\Service\UserServiceBusinessLayer.cs:line 18
+   at BookStore.Controllers.UserController.CreateUser(User user) in C:\Users\Thanay\source\repos\BookStore\BookStore\Controllers\UserController.cs:line 26
+ClientConnectionId:4ac1d50e-a424-4b87-939a-12b18207e334
+Error Number:2812,State:62,Class:16
+2024-06-18 15:39:59.6256|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'ModelLayer.ResponseModel.ResponseModel`1[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-06-18 15:39:59.6421|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action BookStore.Controllers.UserController.CreateUser (BookStore) in 2326.2805ms
+2024-06-18 15:39:59.6421|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'BookStore.Controllers.UserController.CreateUser (BookStore)'
+2024-06-18 15:39:59.6421|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7234/api/User/create - 500 - application/json;+charset=utf-8 2408.6211ms
+2024-06-18 15:42:58.3268|WARN|Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer|The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert.
+2024-06-18 15:42:58.5358|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7234
+2024-06-18 15:42:58.5358|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5098
+2024-06-18 15:42:58.5426|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-06-18 15:42:58.5426|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-06-18 15:42:58.5426|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Thanay\source\repos\BookStore\BookStore
+2024-06-18 15:43:03.0908|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7234/swagger - - -
+2024-06-18 15:43:03.4235|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7234/swagger - 301 0 - 344.1238ms
+2024-06-18 15:43:03.4332|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7234/swagger/index.html - - -
+2024-06-18 15:43:03.5858|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7234/swagger/index.html - 200 - text/html;charset=utf-8 152.8094ms
+2024-06-18 15:43:03.5946|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7234/swagger/swagger-ui.css - - -
+2024-06-18 15:43:03.5946|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7234/swagger/swagger-ui-bundle.js - - -
+2024-06-18 15:43:03.5946|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7234/swagger/swagger-ui-standalone-preset.js - - -
+2024-06-18 15:43:03.5946|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7234/_framework/aspnetcore-browser-refresh.js - - -
+2024-06-18 15:43:03.5946|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7234/_vs/browserLink - - -
+2024-06-18 15:43:03.6488|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7234/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript;+charset=utf-8 52.4958ms
+2024-06-18 15:43:03.7391|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2024-06-18 15:43:03.7391|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2024-06-18 15:43:03.7829|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7234/swagger/swagger-ui-standalone-preset.js - 200 339486 text/javascript 188.1985ms
+2024-06-18 15:43:03.7829|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7234/swagger/swagger-ui.css - 200 143943 text/css 190.8965ms
+2024-06-18 15:43:03.9331|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2024-06-18 15:43:03.9331|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7234/swagger/swagger-ui-bundle.js - 200 1096145 text/javascript 348.3090ms
+2024-06-18 15:43:03.9817|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7234/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 385.4115ms
+2024-06-18 15:43:04.3742|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7234/swagger/v1/swagger.json - - -
+2024-06-18 15:43:04.7429|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7234/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 368.7215ms
+2024-06-18 15:48:25.7676|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7234/api/User/create - application/json 108
+2024-06-18 15:48:25.7777|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'BookStore.Controllers.UserController.CreateUser (BookStore)'
+2024-06-18 15:48:25.8223|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "CreateUser", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[ModelLayer.ResponseModel.ResponseModel`1[System.Int32]]] CreateUser(RepositoryLayer.Entity.User) on controller BookStore.Controllers.UserController (BookStore).
+2024-06-18 16:18:03.6579|WARN|Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer|The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert.
+2024-06-18 16:18:03.8388|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7234
+2024-06-18 16:18:03.8388|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5098
+2024-06-18 16:18:03.8388|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-06-18 16:18:03.8388|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-06-18 16:18:03.8388|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Thanay\source\repos\BookStore\BookStore
+2024-06-18 16:18:06.5944|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7234/swagger - - -
+2024-06-18 16:18:06.9394|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7234/swagger - 301 0 - 366.9017ms
+2024-06-18 16:18:06.9394|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7234/swagger/index.html - - -
+2024-06-18 16:18:07.1204|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7234/swagger/index.html - 200 - text/html;charset=utf-8 173.3182ms
+2024-06-18 16:18:07.1391|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7234/swagger/swagger-ui.css - - -
+2024-06-18 16:18:07.1391|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7234/swagger/swagger-ui-bundle.js - - -
+2024-06-18 16:18:07.1391|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7234/swagger/swagger-ui-standalone-preset.js - - -
+2024-06-18 16:18:07.2178|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2024-06-18 16:18:07.2178|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2024-06-18 16:18:07.2178|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7234/swagger/swagger-ui-standalone-preset.js - 200 339486 text/javascript 81.1226ms
+2024-06-18 16:18:07.2178|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7234/swagger/swagger-ui.css - 200 143943 text/css 85.3026ms
+2024-06-18 16:18:07.2323|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7234/_framework/aspnetcore-browser-refresh.js - - -
+2024-06-18 16:18:07.2323|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7234/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript;+charset=utf-8 9.9653ms
+2024-06-18 16:18:07.2525|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2024-06-18 16:18:07.2525|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7234/swagger/swagger-ui-bundle.js - 200 1096145 text/javascript 114.1694ms
+2024-06-18 16:18:07.2525|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7234/_vs/browserLink - - -
+2024-06-18 16:18:07.3449|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7234/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 89.7826ms
+2024-06-18 16:18:07.7284|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7234/swagger/v1/swagger.json - - -
+2024-06-18 16:18:07.8948|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7234/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 166.5310ms
+2024-06-18 16:18:38.8137|WARN|Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer|The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert.
+2024-06-18 16:18:42.0507|WARN|Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer|The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert.
+2024-06-18 16:18:42.1156|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7234
+2024-06-18 16:18:42.1156|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5098
+2024-06-18 16:18:42.1190|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-06-18 16:18:42.1190|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-06-18 16:18:42.1190|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Thanay\source\repos\BookStore\BookStore
+2024-06-18 16:18:42.7489|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7234/swagger - - -
+2024-06-18 16:18:42.9030|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7234/swagger/index.html - - -
+2024-06-18 16:18:42.9030|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7234/swagger - 301 0 - 151.6046ms
+2024-06-18 16:18:43.0026|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7234/swagger/index.html - 200 - text/html;charset=utf-8 99.3870ms
+2024-06-18 16:18:43.0026|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7234/swagger/swagger-ui.css - - -
+2024-06-18 16:18:43.0026|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7234/swagger/swagger-ui-bundle.js - - -
+2024-06-18 16:18:43.0026|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7234/swagger/swagger-ui-standalone-preset.js - - -
+2024-06-18 16:18:43.0026|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7234/_vs/browserLink - - -
+2024-06-18 16:18:43.0026|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7234/_framework/aspnetcore-browser-refresh.js - - -
+2024-06-18 16:18:43.0026|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7234/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript;+charset=utf-8 4.1426ms
+2024-06-18 16:18:43.0345|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2024-06-18 16:18:43.0345|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2024-06-18 16:18:43.0345|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7234/swagger/swagger-ui.css - 200 143943 text/css 35.3248ms
+2024-06-18 16:18:43.0345|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7234/swagger/swagger-ui-standalone-preset.js - 200 339486 text/javascript 35.2029ms
+2024-06-18 16:18:43.0451|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2024-06-18 16:18:43.0451|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7234/swagger/swagger-ui-bundle.js - 200 1096145 text/javascript 42.1933ms
+2024-06-18 16:18:43.0572|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7234/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 52.1340ms
+2024-06-18 16:18:43.3600|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7234/swagger/v1/swagger.json - - -
+2024-06-18 16:18:43.5255|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7234/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 165.6702ms
+2024-06-18 16:19:36.1548|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7234/api/User/create - application/json 108
+2024-06-18 16:19:36.1548|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'BookStore.Controllers.UserController.CreateUser (BookStore)'
+2024-06-18 16:19:36.1972|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "CreateUser", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[ModelLayer.ResponseModel.ResponseModel`1[System.Int32]]] CreateUser(RepositoryLayer.Entity.User) on controller BookStore.Controllers.UserController (BookStore).
+2024-06-18 16:19:36.9112|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'ModelLayer.ResponseModel.ResponseModel`1[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-06-18 16:19:36.9204|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action BookStore.Controllers.UserController.CreateUser (BookStore) in 715.7903ms
+2024-06-18 16:19:36.9204|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'BookStore.Controllers.UserController.CreateUser (BookStore)'
+2024-06-18 16:19:36.9204|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7234/api/User/create - 200 - application/json;+charset=utf-8 767.0521ms
+2024-06-18 16:19:51.3390|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7234/api/User/getall - - -
+2024-06-18 16:19:51.3390|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'BookStore.Controllers.UserController.GetUsers (BookStore)'
+2024-06-18 16:19:51.3390|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetUsers", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[ModelLayer.ResponseModel.ResponseModel`1[System.Collections.Generic.List`1[RepositoryLayer.Entity.User]]]] GetUsers() on controller BookStore.Controllers.UserController (BookStore).
+2024-06-18 16:19:51.3758|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'ModelLayer.ResponseModel.ResponseModel`1[[System.Collections.Generic.List`1[[RepositoryLayer.Entity.User, RepositoryLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-06-18 16:19:51.3758|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action BookStore.Controllers.UserController.GetUsers (BookStore) in 32.085ms
+2024-06-18 16:19:51.3758|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'BookStore.Controllers.UserController.GetUsers (BookStore)'
+2024-06-18 16:19:51.3758|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7234/api/User/getall - 200 - application/json;+charset=utf-8 39.7489ms
+2024-06-18 16:20:12.8326|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7234/api/User/getbyid/1 - - -
+2024-06-18 16:20:12.8326|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'BookStore.Controllers.UserController.GetUserById (BookStore)'
+2024-06-18 16:20:12.8326|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetUserById", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[ModelLayer.ResponseModel.ResponseModel`1[RepositoryLayer.Entity.User]]] GetUserById(Int32) on controller BookStore.Controllers.UserController (BookStore).
+2024-06-18 16:20:12.8745|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'ModelLayer.ResponseModel.ResponseModel`1[[RepositoryLayer.Entity.User, RepositoryLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-18 16:20:12.8745|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action BookStore.Controllers.UserController.GetUserById (BookStore) in 28.4463ms
+2024-06-18 16:20:12.8745|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'BookStore.Controllers.UserController.GetUserById (BookStore)'
+2024-06-18 16:20:12.8745|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7234/api/User/getbyid/1 - 200 - application/json;+charset=utf-8 43.3023ms
