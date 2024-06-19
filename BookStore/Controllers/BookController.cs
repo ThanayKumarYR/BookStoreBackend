@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using RepositoryLayer.Entity;
 using ModelLayer.ResponseModel;
+using Microsoft.AspNetCore.Authorization;
 
 namespace BookStore.Controllers
 {
@@ -18,6 +19,7 @@ namespace BookStore.Controllers
             _logger = logger;
         }
 
+        [Authorize]
         [HttpPost("create")]
         public async Task<ActionResult<ResponseModel<int>>> CreateBook([FromBody] Book book)
         {
@@ -41,6 +43,7 @@ namespace BookStore.Controllers
             }
         }
 
+        [Authorize]
         [HttpGet("getall")]
         public async Task<ActionResult<ResponseModel<List<Book>>>> GetAllBooks()
         {
@@ -64,6 +67,7 @@ namespace BookStore.Controllers
             }
         }
 
+        [Authorize]
         [HttpGet("getbyid/{bookId}")]
         public async Task<ActionResult<ResponseModel<Book>>> GetBookById(int bookId)
         {
@@ -94,6 +98,7 @@ namespace BookStore.Controllers
             }
         }
 
+        [Authorize]
         [HttpPut("update/{bookId}")]
         public async Task<ActionResult<ResponseModel<string>>> UpdateBook(int bookId, [FromBody] Book book)
         {
@@ -117,6 +122,7 @@ namespace BookStore.Controllers
             }
         }
 
+        [Authorize]
         [HttpDelete("delete/{bookId}")]
         public async Task<ActionResult<ResponseModel<string>>> DeleteBook(int bookId)
         {

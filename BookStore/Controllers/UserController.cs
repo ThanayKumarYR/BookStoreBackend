@@ -1,6 +1,7 @@
 ﻿using BusinessLayer.Interface;
 using Microsoft.AspNetCore.Mvc;
 using ModelLayer.ResponseModel;
+using ModelLayer.UserModel;
 using RepositoryLayer.Entity;
 
 namespace BookStore.Controllers
@@ -18,27 +19,27 @@ namespace BookStore.Controllers
             _logger = logger;
         }
 
-        [HttpPost("create")]
+        [HttpPost("register")]
         public async Task<ActionResult<ResponseModel<int>>> CreateUser([FromBody] User user)
         {
             try
             {
                 var userId = await _userBusinessLayer.CreateUserAsync(user.FullName, user.EmailId, user.Password, user.MobileNumber);
-                var response = new ResponseModel<int>
+                var response = new ResponseModel<string>
                 {
                     Success = true,
-                    Message = "User created successfully",
-                    Data = userId
+                    Message = "User registered successfully",
+                    Data = null
                 };
                 return Ok(response);
             }
             catch (System.Exception ex)
             {
-                _logger.LogError(ex, "Error creating user");
+                _logger.LogError(ex, "Error registering user");
                 var response = new ResponseModel<int>
                 {
                     Success = false,
-                    Message = "Failed to create user"
+                    Message = ex.Message,
                 };
                 return StatusCode(500, response);
             }
@@ -70,31 +71,31 @@ namespace BookStore.Controllers
             }
         }
 
-        [HttpGet("getbyid/{userId}")]
-        public async Task<ActionResult<ResponseModel<User>>> GetUserById(int userId)
+        [HttpPost("login")]
+        public async Task<ActionResult<ResponseModel<string>>> login(UserLoginModel userLoginModel)
         {
             try
             {
-                var user = await _userBusinessLayer.GetUserByIdAsync(userId);
-                if (user == null)
+                var token = await _userBusinessLayer.GetUserByEmailIdAsync(userLoginModel);
+                if (token == null)
                 {
                     return NotFound();
                 }
-                var response = new ResponseModel<User>
+                var response = new ResponseModel<string>
                 {
                     Success = true,
-                    Message = "User retrieved successfully",
-                    Data = user
+                    Message = "User logined successfully",
+                    Data = token.ToString()
                 };
                 return Ok(response);
             }
             catch (System.Exception ex)
             {
-                _logger.LogError(ex, "Error retrieving user");
+                _logger.LogError(ex, "Error in login user");
                 var response = new ResponseModel<User>
                 {
                     Success = false,
-                    Message = "Failed to retrieve user"
+                    Message = ex.Message
                 };
                 return StatusCode(500, response);
             }

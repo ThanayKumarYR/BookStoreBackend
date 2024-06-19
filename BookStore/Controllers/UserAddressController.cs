@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using RepositoryLayer.Entity;
 using ModelLayer.ResponseModel;
+using Microsoft.AspNetCore.Authorization;
 
 namespace BookStore.Controllers
 {
@@ -18,6 +19,8 @@ namespace BookStore.Controllers
             _logger = logger;
         }
 
+
+        [Authorize]
         [HttpPost("create")]
         public async Task<ActionResult<ResponseModel<int>>> CreateAddress([FromBody] UserAddress userAddress)
         {
@@ -35,6 +38,7 @@ namespace BookStore.Controllers
             }
         }
 
+        [Authorize]
         [HttpGet("getall")]
         public async Task<ActionResult<ResponseModel<List<UserAddress>>>> GetAddresses()
         {
@@ -51,6 +55,7 @@ namespace BookStore.Controllers
             }
         }
 
+        [Authorize]
         [HttpGet("getbyid/{addressId}")]
         public async Task<ActionResult<ResponseModel<UserAddress>>> GetAddressById(int addressId)
         {
@@ -72,6 +77,7 @@ namespace BookStore.Controllers
             }
         }
 
+        [Authorize]
         [HttpPut("update/{addressId}")]
         public async Task<IActionResult> UpdateAddress(int addressId, [FromBody] UserAddress userAddress)
         {
@@ -90,6 +96,7 @@ namespace BookStore.Controllers
             }
         }
 
+        [Authorize]
         [HttpDelete("delete/{addressId}")]
         public async Task<IActionResult> DeleteAddress(int addressId)
         {

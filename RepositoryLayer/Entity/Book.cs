@@ -9,6 +9,9 @@ namespace RepositoryLayer.Entity
         public int BookId { get; set; } // Primary key
 
         [Required]
+        public string ImgSrc {  get; set; }
+
+        [Required]
         [MaxLength(255)]
         public string Title { get; set; }
 

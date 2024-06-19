@@ -1,4 +1,5 @@
 ﻿using BusinessLayer.Interface;
+using ModelLayer.UserModel;
 using RepositoryLayer.Entity;
 using RepositoryLayer.Interface;
 
@@ -23,9 +24,9 @@ namespace BusinessLayer.Service
             return await _userRepository.GetUsersAsync();
         }
 
-        public async Task<User> GetUserByIdAsync(int userId)
+        public async Task<string> GetUserByEmailIdAsync(UserLoginModel userLoginModel)
         {
-            return await _userRepository.GetUserByIdAsync(userId);
+            return await _userRepository.GetUserByEmailIdAsync(userLoginModel);
         }
 
         public async Task UpdateUserAsync(int userId, string fullName, string emailId, string password, string mobileNumber)

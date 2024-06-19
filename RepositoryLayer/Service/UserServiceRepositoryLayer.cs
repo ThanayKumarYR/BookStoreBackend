@@ -1,5 +1,6 @@
 ﻿using System.Data;
 using Dapper;
+using ModelLayer.UserModel;
 using Repository.Context;
 using RepositoryLayer.Entity;
 using RepositoryLayer.Interface;
@@ -9,16 +10,16 @@ namespace RepositoryLayer.Service
     public class UserServiceRepositoryLayer : IUserRepositoryLayer
     {
         private readonly DapperContext _context;
-
-        public UserServiceRepositoryLayer(DapperContext context)
+        private readonly IAuthServiceRepositoryLayer _authService;
+        public UserServiceRepositoryLayer(DapperContext context, IAuthServiceRepositoryLayer authService)
         {
             _context = context;
+            _authService = authService;
         }
 
         public async Task<int> InsertUserAsync(string fullName, string emailId, string password, string mobileNumber)
         {
-            await EnsureUsersTableCreatedAsync();
-            await CreateStoredProceduresAsync();
+            if(!await CheckIfUsersTableExistsAsync()) await EnsureUsersTableCreatedAsync();
 
             using (var conn = _context.CreateConnection())
             {
@@ -26,7 +27,7 @@ namespace RepositoryLayer.Service
                 {
                     FullName = fullName,
                     EmailId = emailId,
-                    Password = password,
+                    Password = BCrypt.Net.BCrypt.HashPassword(password),
                     MobileNumber = mobileNumber
                 };
 
@@ -42,13 +43,27 @@ namespace RepositoryLayer.Service
             }
         }
 
-        public async Task<User> GetUserByIdAsync(int userId)
+        public async Task<string> GetUserByEmailIdAsync(UserLoginModel userLoginModel)
         {
+            string token = string.Empty;
             using (var conn = _context.CreateConnection())
             {
-                var parameters = new { UserId = userId };
-                return await conn.QueryFirstOrDefaultAsync<User>("User_SelectById", parameters, commandType: CommandType.StoredProcedure);
+                var parameters = new { EmailId =  userLoginModel.EmailId };
+                User user =  await conn.QueryFirstOrDefaultAsync<User>("User_SelectByEmailId", parameters, commandType: CommandType.StoredProcedure);
+                if (user == null)
+                {
+                    throw new Exception("User not found");
+                }
+                else 
+                {
+                    if (!BCrypt.Net.BCrypt.Verify(userLoginModel.Password,user.Password)) { 
+                        throw new Exception("Invalid Password Credential"); 
+                    }
+                    token = _authService.GenerateJwtToken(user);
+                }
             }
+
+            return token;
         }
 
         public async Task UpdateUserAsync(int userId, string fullName, string emailId, string password, string mobileNumber)
@@ -87,12 +102,30 @@ namespace RepositoryLayer.Service
                         CREATE TABLE [dbo].[Users] (
                             [UserId] INT IDENTITY(1,1) PRIMARY KEY,
                             [FullName] NVARCHAR(100) NOT NULL,
-                            [EmailId] NVARCHAR(100),
+                            [EmailId] NVARCHAR(100) NOT NULL,
                             [Password] NVARCHAR(100) NOT NULL,
                             [MobileNumber] NVARCHAR(15)
                         );
                     END
                 ");
+            }
+
+            await CreateStoredProceduresAsync();
+        }
+
+        public async Task<bool> CheckIfUsersTableExistsAsync()
+        {
+            const string query = @"
+                SELECT CASE WHEN EXISTS (
+                    SELECT * 
+                    FROM sys.objects 
+                    WHERE object_id = OBJECT_ID(N'[dbo].[Users]') AND type in (N'U')
+                ) THEN CAST(1 AS BIT)
+                ELSE CAST(0 AS BIT) END";
+
+            using (var conn = _context.CreateConnection())
+            {
+                return await conn.ExecuteScalarAsync<bool>(query);
             }
         }
 
@@ -101,7 +134,7 @@ namespace RepositoryLayer.Service
         {
             await CreateInsertProcedureAsync();
             await CreateSelectAllProcedureAsync();
-            await CreateSelectByIdProcedureAsync();
+            await CreateSelectByEmailIdProcedureAsync();
             await CreateUpdateProcedureAsync();
             await CreateDeleteProcedureAsync();
         }
@@ -155,21 +188,21 @@ namespace RepositoryLayer.Service
             }
         }
 
-        private async Task CreateSelectByIdProcedureAsync()
+        private async Task CreateSelectByEmailIdProcedureAsync()
         {
             using (var conn = _context.CreateConnection())
             {
                 await conn.ExecuteAsync(@"
-                    IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[User_SelectById]') AND type in (N'P', N'PC'))
+                    IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[User_SelectByEmailId]') AND type in (N'P', N'PC'))
                     BEGIN
                         EXEC('
-                        CREATE PROCEDURE [dbo].[User_SelectById]
-                            @UserId INT
+                        CREATE PROCEDURE [dbo].[User_SelectByEmailId]
+                            @EmailId NVARCHAR(100)
                         AS
                         BEGIN
                             SET NOCOUNT ON;
 
-                            SELECT * FROM [dbo].[Users] WHERE UserId = @UserId;
+                            SELECT * FROM [dbo].[Users] WHERE EmailId = @EmailId;
                         END
                         ');
                     END

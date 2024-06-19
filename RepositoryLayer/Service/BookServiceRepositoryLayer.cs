@@ -25,6 +25,7 @@ namespace RepositoryLayer.Service
             {
                 var parameters = new
                 {
+                    book.ImgSrc,
                     book.Title,
                     book.Author,
                     book.Rating,
@@ -63,6 +64,7 @@ namespace RepositoryLayer.Service
                 var parameters = new
                 {
                     book.BookId,
+                    book.ImgSrc,
                     book.Title,
                     book.Author,
                     book.Rating,
@@ -95,6 +97,7 @@ namespace RepositoryLayer.Service
                     BEGIN
                         CREATE TABLE [dbo].[Books] (
                             [BookId] INT IDENTITY(1,1) PRIMARY KEY,
+                            [ImgSrc] NVARCHAR(255) NOT NULL,
                             [Title] NVARCHAR(255) NOT NULL,
                             [Author] NVARCHAR(255) NOT NULL,
                             [Rating] FLOAT NOT NULL,
@@ -110,6 +113,7 @@ namespace RepositoryLayer.Service
                     BEGIN
                         EXEC('
                             CREATE PROCEDURE [dbo].[Book_Insert]
+                                @ImgSrc NVARCHAR(255),
                                 @Title NVARCHAR(255),
                                 @Author NVARCHAR(255),
                                 @Rating FLOAT,
@@ -120,8 +124,8 @@ namespace RepositoryLayer.Service
                                 @Description NVARCHAR(MAX)
                             AS
                             BEGIN
-                                INSERT INTO [dbo].[Books] (Title, Author, Rating, RatingPeopleCount, Price, DiscountedPrice, OutOfStock, Description)
-                                VALUES (@Title, @Author, @Rating, @RatingPeopleCount, @Price, @DiscountedPrice, @OutOfStock, @Description);
+                                INSERT INTO [dbo].[Books] (ImgSrc,Title, Author, Rating, RatingPeopleCount, Price, DiscountedPrice, OutOfStock, Description)
+                                VALUES (@ImgSrc, @Title, @Author, @Rating, @RatingPeopleCount, @Price, @DiscountedPrice, @OutOfStock, @Description);
                                 SELECT SCOPE_IDENTITY();
                             END
                         ');
@@ -155,6 +159,7 @@ namespace RepositoryLayer.Service
                         EXEC('
                             CREATE PROCEDURE [dbo].[Book_Update]
                                 @BookId INT,
+                                @ImgSrc NVARCHAR(255),
                                 @Title NVARCHAR(255),
                                 @Author NVARCHAR(255),
                                 @Rating FLOAT,
@@ -166,7 +171,8 @@ namespace RepositoryLayer.Service
                             AS
                             BEGIN
                                 UPDATE [dbo].[Books]
-                                SET Title = @Title,
+                                SET ImgSrc = @ImgSrc,
+                                    Title = @Title,
                                     Author = @Author,
                                     Rating = @Rating,
                                     RatingPeopleCount = @RatingPeopleCount,
