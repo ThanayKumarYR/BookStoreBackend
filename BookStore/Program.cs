@@ -29,6 +29,9 @@ builder.Services.AddScoped<IUserAddressRepositoryLayer, UserAddressServiceReposi
 builder.Services.AddScoped<IUserAddressBusinessLayer,UserAddressServiceBusinessLayer>();
 builder.Services.AddScoped<IBookRepositoryLayer,BookServiceRepositoryLayer>();
 builder.Services.AddScoped<IBookBusinessLayer, BookServiceBusinessLayer>();
+
+builder.Services.AddScoped<ICartRepositoryLayer, CartServiceRepositoryLayer>();
+builder.Services.AddScoped<ICartBusinessLayer, CartBusinessLayer>();
 builder.Services.AddControllers();
 
 builder.Services.AddCors(options =>
